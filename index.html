@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Card</h1>
+    <p id="card_id">card id</p>
+
+    <script>
+        document.onkeydown = function(evt) {
+            evt = evt || window.event;
+            // if (evt.ctrlKey && evt.keyCode == 90) {
+            //     alert("Ctrl-Z");
+            // }
+            document.getElementById("card_id").innerHTML = document.getElementById("card_id").innerHTML + evt.code;
+        };
+
+        
+    </script> 
+
+</body>
+</html>
