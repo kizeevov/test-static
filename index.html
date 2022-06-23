@@ -4,14 +4,20 @@
 
     <h1>Card</h1>
     <p id="card_id">card id</p>
+    <p id="card_id2">card id</p>
+    <p id="card_id3">card id</p>
 
     <script>
         document.onkeydown = function(evt) {
-            evt = evt || window.event;
+            // evt = evt || window.event;
+
             // if (evt.ctrlKey && evt.keyCode == 90) {
             //     alert("Ctrl-Z");
             // }
             document.getElementById("card_id").innerHTML = document.getElementById("card_id").innerHTML + evt.code;
+            document.getElementById("card_id2").innerHTML = document.getElementById("card_id2").innerHTML + evt.keyCode;
+            document.getElementById("card_id3").innerHTML = document.getElementById("card_id3").innerHTML + evt.key;
+            console.log(evt)
         };
 
         
